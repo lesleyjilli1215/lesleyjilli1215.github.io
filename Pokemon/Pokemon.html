@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Demo] Pokémon</title>
+    <link rel="stylesheet" href="/Pokemon.css">
+    
+</head>
+
+<body>
+    <h1>Featured Pokémon</h1>
+    <div class="btns">
+        <button onclick='fetchPokemon()'>Fetch Pokémon</button>
+        <button onclick='fetchPokemon_appendChild()'>Fetch Pokémon_appendChild()</button>
+        <button onclick='Reset()'>Reset</button>
+    </div>
+
+    <div id='container'></div>
+
+    <script>
+        var container = document.getElementById('container');
+        window.onload = appendPokemon();
+
+        function appendPokemon() {
+            let img = document.createElement('img');
+            img.setAttribute('src', "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png")
+            container.appendChild(img);
+        }
+
+        //利用Element.innerHTML設定HTML字串
+        function fetchPokemon() {
+            let fileName;
+            let pathFile;
+            let pokemonImg;
+            let pokemons = '';
+            for (let i = 1; i < 890; i++) {
+                fileName = i.toString().padStart(3, '0');
+                pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
+                pokemonImg = `<img src='${pathFile}' />`;
+                pokemons += pokemonImg;
+                //debugger;
+            }
+
+            container.innerHTML = pokemons;
+        }
+
+        function fetchPokemon_appendChild() {
+            container.innerHTML = '';
+            let fileName;
+            let pathFile;
+            let pokemonImg;
+            let pokemons = '';
+            for (let i = 1; i < 890; i++) {
+                fileName = i.toString().padStart(3, '0');
+                pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
+                pokemonImg = document.createElement('img');
+                pokemonImg.src = pathFile; 
+                container.appendChild(pokemonImg);
+            }
+
+        }
+
+        function Reset() {
+            container.innerHTML = '';
+            window.onload = appendPokemon();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>[Demo] League of Legend</title>
+    <style>
+        li {
+            list-style: none;
+        }
+
+        img {
+            width: 100%;
+            vertical-align: middle;
+            transform: scale(100%);
+            transition: .3s;
+        }
+
+        .pic {
+            overflow: hidden;
+        }
+
+        .card {
+            background-color: rgb(240, 240, 240);
+        }
+
+        .card:hover {
+            box-shadow: 7px 7px 14px #cccccc,
+                -7px -7px 14px #ffffff;
+        }
+
+        .card:hover img {
+            transform: scale(110%);
+        }
+
+        .card-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        @media screen and (max-width: 767px) {
+            .btn.btn-secondary.col.my-2.mx-2 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal fade" id="champ-modal" tabindex="-1" aria-labelledby="champ-name" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-champ-name"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modal-img" src="" class="card-img-top" alt="">
+                    <ul>
+                        <li class="my-3" id="hp"></li>
+                        <li class="mb-3" id="movespeed"></li>
+                        <li class="mb-3" id="armor"></li>
+                        <li class="mb-3" id="spellblock"></li>
+                        <li class="mb-3" id="attackrange"></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="title mt-5 row">
+            <h1 class="text-center fw-bolder w-100"> League of Legend </h1>
+        </div>
+        <button class="btn btn-secondary col my-2 mx-2" id="fetch"> AJAX fetch </button>
+        <button class="btn btn-secondary col my-2 mx-2" id="xhr"> AJAX XMLHttp Request </button>
+        <button class="btn btn-secondary col my-2 mx-2" id="clear"> Clear </button>
+    </div>
+    <div class="content container-fluid row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 mx-auto">
+
+    </div>
+
+    <!-- card template -->
+    <template id="champCard">
+        <div class="card my-4 p-0 rounded-3 col">
+            <div class="pic">
+                <img src="" class="card-img-top" id="card-img" alt="">
+            </div>
+            <div class="card-body mt-3">
+                <h5 class="card-title" id="card-champ-name"></h5>
+                <p class="card-text" id="card-champ-story"></p>
+                <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#champ-modal">
+                    詳細資訊
+                </button>
+            </div>
+        </div>
+    </template>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <script src="lol.js"></script>
+
+</body>
+
+</html>

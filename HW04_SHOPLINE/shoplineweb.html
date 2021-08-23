@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <style>
+        body {
+            padding-top: 105px;
+        }
+
+        div {
+            font-family: SFPro, Arial, Noto Sans JP, Noto Sans KR, sans-serif;
+        }
+
+        /* header */
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            box-shadow: 0 0 5px rgb(36 50 66 / 20%);
+        }
+
+        .header-top {
+            height: 40px;
+            background-color: #00142d;
+            font-size: 0;
+            text-align: right;
+            padding-right: 40px;
+        }
+
+        .header-top li {
+            display: inline-block;
+            padding: 3px 0 3px 20px;
+            margin-top: 10px;
+        }
+
+        .header-top li:first-child {
+            padding-right: 20px;
+            border-right: 1px solid #748094;
+        }
+
+        .header-top a {
+            font-size: 14px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .header-top a:hover {
+            color: #0061FF;
+        }
+
+        .header-bottom {
+            background-color: white;
+            font-size: 0;
+        }
+
+        .header-bottom img {
+            width: 160px;
+        }
+
+        .header-bottom :not(:first-child) {
+            display: inline-block;
+            padding: 30px 10px;
+            font-size: 15px;
+            text-decoration: none;
+            color: #324255;
+            box-sizing: border-box;
+        }
+
+        .header-bottom :not(:last-child):hover {
+            color: #0061FF;
+        }
+
+        .header-bottom a:nth-child(2) {
+            margin-left: 280px;
+        }
+
+        .header-bottom a:first-child {
+            position: absolute;
+            top: 65px;
+            left: 60px;
+        }
+
+        .header-bottom a:last-child {
+            padding: 10px 18px;
+            background-color: #0061FF;
+            border-radius: 30px;
+            color: white;
+            font-size: 14px;
+            position: absolute;
+            top: 62px;
+            right: 60px;
+        }
+
+        .header-bottom a:last-child:hover,
+        .button:hover {
+            /*header-bottom的免費使用按鈕，層級比樓上低，用.button會沒有作用，只好全打出來*/
+            background-color: #0747a6;
+            color: rgb(216, 216, 216);
+            cursor: pointer;
+        }
+
+        /* home */
+        .home {
+            width: 100%;
+            height: 700px;
+            background-image: url(home-background.png);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .home-txt {
+            width: 550px;
+            padding: 50px;
+        }
+
+        .home-txt h1 {
+            font-size: 40px;
+            font-weight: bolder;
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .home-txt h2 {
+            font-size: 40px;
+            font-weight: bolder;
+            color: #f28040;
+            margin-bottom: 40px;
+        }
+
+        .home-txt p {
+            font-size: 17px;
+            font-weight: bolder;
+            color: white;
+            line-height: 2;
+            margin-bottom: 50px;
+        }
+
+        input {
+            background-color: #00142d;
+            color: white;
+            outline: none;
+            border-bottom: 1px solid white;
+            font-size: 18px;
+            width: 300px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 30px;
+            background-color: #0061FF;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            border: none;
+        }
+
+        .home img {
+            width: 650px;
+        }
+
+        /* intro */
+        .intro {
+            padding: 60px 20px 0;
+            /* width: 100%; */
+            /* background-color: rgb(236, 236, 152); */
+        }
+
+        .intro>h2,
+        .intro-item-txt h3,
+        .service>h3 {
+            font-size: 32px;
+            line-height: 1.5;
+            text-align: center;
+            font-weight: bolder;
+            margin-bottom: 30px;
+        }
+
+        .intro p {
+            font-size: 17px;
+            line-height: 1.5;
+            text-align: center;
+            color: #324255;
+            margin-bottom: 30px;
+        }
+
+        .intro-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* width: 1200px; */
+            padding: 100px 0;
+            margin: auto;
+            /* border: 1px solid black; */
+        }
+
+        .intro-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .intro-item:not(:last-child) {
+            border-bottom: 1px solid rgb(216, 216, 216);
+        }
+
+        .intro-item-txt {
+            width: 570px;
+            padding: 20px 0;
+            /* border: 1px solid blue; */
+        }
+
+        .intro-item-txt h3 {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .intro-item-txt p {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        /* .intro-item-pic {
+            width: 50%;
+            border: 1px solid brown;
+        } */
+
+        .intro-item-pic img {
+            width: 600px;
+        }
+
+        .intro-item-txt ul {
+            margin-bottom: 10px;
+        }
+
+        .intro-item-txt li {
+            font-size: 16px;
+            color: #324255;
+            display: inline-block;
+            width: 250px;
+            height: 20px;
+            margin-left: 25px;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: -1;
+        }
+
+        .intro-item-txt li::before {
+            content: " ";
+            width: 19px;
+            height: 19px;
+            background-color: #DEEBFF;
+            border-radius: 50%;
+            position: absolute;
+            top: -1px;
+            left: -25px;
+        }
+
+        .intro-item-txt a {
+            text-decoration: none;
+            color: #0061FF;
+        }
+
+        /* service */
+        .service {
+            background-color: #F4F5F7;
+            /* width: 100%; */
+            padding-top: 70px;
+            padding-bottom: 50px;
+        }
+
+        .service-item-group {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1100px;
+            margin: auto;
+            justify-content: space-between;
+            /* border: 1px solid black; */
+        }
+
+        .service-item {
+            width: 300px;
+            margin-bottom: 40px;
+        }
+
+        .service-item h3 {
+            font-size: 20px;
+            text-align: center;
+            line-height: 2;
+        }
+
+        .service-item p {
+            font-size: 15px;
+            text-align: left;
+            line-height: 1.5;
+            color: #324255;
+        }
+
+        .service-item-pic {
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-shadow: 0 0 12px rgb(36 50 66 / 20%);
+            margin: auto;
+            margin-bottom: 35px;
+        }
+
+        .service-item-pic img {
+            width: 70px;
+            height: 70px;
+            margin-top: 25px;
+            margin-left: 25px;
+        }
+
+
+        /* map */
+        .map {
+            /* width: 100%; */
+            height: 400px;
+            background-image: url(footer-background.png);
+            background-repeat: no-repeat;
+            background-position: -200px top;
+            background-size: 90%;
+            background-color: #172B4D;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .map-txt {
+            width: 60%;
+            padding-left: 50px;
+        }
+
+        .map-pic {
+            width: 40%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .map-pic img {
+            width: 615px;
+            position: absolute;
+            right: -140px;
+            bottom: 0;
+            /* pointer-events: none; */
+        }
+
+        .map-txt h4 {
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-bottom: 60px;
+        }
+
+        .map-txt a {
+            display: inline-block;
+            padding: 15px 120px;
+            background-color: #0061FF;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+        }
+
+
+        /* footer */
+        footer {
+            background-color: #00142D;
+            padding-top: 40px;
+        }
+
+        .footer-list-group {
+            width: 1100px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 25px;
+            border-top: 2px solid #172B4D;
+        }
+
+        .footer-list-col h4 {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .footer-list-col li {
+            margin-bottom: 25px;
+        }
+
+        .footer-list-col a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #748094;
+        }
+
+        .footer-list-col a:hover {
+            color: white;
+        }
+
+        .covid-19-link {
+            width: 1100px;
+            margin: auto;
+            text-align: right;
+            padding-bottom: 80px;
+            border-bottom: 2px solid #172B4D;
+        }
+
+        .covid-19-link a {
+            display: inline-block;
+            background-color: #dbf8ed;
+            padding: 10px 40px;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .covid-19-link a:hover {
+            background-color: #AFCAC7;
+        }
+
+        .footer-bottom {
+            width: 1100px;
+            height: 140px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer-bottom-link li {
+            display: inline-block;
+            padding: 0 5px;
+        }
+
+        .footer-bottom-link li+li {
+            border-left: 1px solid #748094;
+        }
+
+        .footer-bottom-link a {
+            text-decoration: none;
+            font-size: 14px;
+            color: white;
+        }
+
+        .footer-bottom-link a:hover {
+            color: #0061FF;
+        }
+
+        .footer-bottom-social div {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #172B4D;
+            margin-left: 10px;
+        }
+
+        .footer-bottom-social i {
+            margin-top: 8px;
+            margin-left: 8px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .footer-bottom-social a:hover i {
+            color: #0061FF;
+        }
+
+        .footer-bottom-copyright {
+            font-size: 14px;
+            color: #748094;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-top">
+            <ul>
+                <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                <li><a href="#">幫助中心</a></li>
+                <li><a href="#">登入網店</a></li>
+            </ul>
+        </div>
+        <nav class="header-bottom">
+            <a href="#"><img src="/HW04_SHOPLINE/image/logo.png" alt="SHOPLINE"></a>
+            <a href="#">開店服務</a>
+            <a href="#">方案費用</a>
+            <a href="#">客戶案例</a>
+            <a href="#">開店說明會</a>
+            <a href="#">開店諮詢</a>
+            <a href="#">更多解決方案</a>
+            <a href="#">其他資源</a>
+            <a href="#" class="button">免費試用</a>
+        </nav>
+    </div>
+
+
+    <div class="home">
+        <div class="home-txt">
+            <h1>想在哪開店創業？</h1>
+            <h2>社群購物貼近顧客零距離</h2>
+            <p>超過 25 萬品牌使用！從個人賣家到國際品牌，都能以 SHOPLINE 實現全通路零售，快速拓展市場到世界各地，輕鬆開始你的『 店 』商生意！</p>
+            <form action="">
+                <input type="email" placeholder="請在此輸入電子信箱(可隨時更換)">
+                <button type="submit" class="button">免費試用</button>
+            </form>
+        </div>
+        <div class="home-pic">
+            <img src="/HW04_SHOPLINE/image/shopping-car.png" alt="購物車">
+        </div>
+    </div>
+
+
+    <div class="intro">
+        <h2>單一平台就能助你<br>在全通路輕鬆開店創業</h2>
+        <p>從網路商店架站到實體門市管理，只需要一個平台，就能輕鬆實現開店創業，<br>並能同步管理所有銷售管道，SHOPLINE 助你賣得更多、賣得更好！</p>
+        <div class="intro-item">
+            <div class="intro-item-txt">
+                <h3>免寫程式、多款版型<br>輕鬆打造全能電商網站</h3>
+                <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。</p>
+                <ul>
+                    <li>豐富版型主題與字型搭配</li>
+                    <li>RWD 響應式網頁設計</li>
+                    <li>獨有網址 ＆ SSL 安全憑證</li>
+                    <li>SEO 搜尋引擎優化</li>
+                    <li>一頁商店</li>
+                    <li>開放 HTML／CSS 編輯</li>
+                </ul>
+                <a href="#">看看開店祕技→</a>
+            </div>
+            <div class="intro-item-pic"><img src="/HW04_SHOPLINE/image/intro-1.png" alt=""></div>
+        </div>
+        <div class="intro-item">
+            <div class="intro-item-txt">
+                <h3>支持海內外電商<br>金流、物流一次搞定</h3>
+                <p>支持在地及國際金流、物流串接服務，提供海內外顧客最便利的付款及送貨服務，加速消費者完成下單交易，大幅降低購物車放棄率！</p>
+                <ul>
+                    <li>線上信用卡刷卡</li>
+                    <li>第三方金流／行動支付整合</li>
+                    <li>超商代碼／條碼繳費</li>
+                    <li>多溫層宅配並指定運費</li>
+                    <li>超商／宅配貨到付款</li>
+                    <li>發票開立與串接</li>
+                </ul>
+                <a href="#">了解更多金物流→</a>
+            </div>
+            <div class="intro-item-pic"><img src="/HW04_SHOPLINE/image/intro-2.png" alt=""></div>
+        </div>
+        <div class="intro-item">
+            <div class="intro-item-txt">
+                <h3>刺激下單，創造回購<br>行銷導流、促購模組任你玩</h3>
+                <p>多元優惠活動、會員集客機制、網紅分潤以及直播購物等豐富功能，將電商行銷玩法一網打盡，助你成功優化行銷活動成效，刺激顧客下單、吸引鐵粉回購！</p>
+                <ul>
+                    <li>超過 20 種優惠促銷功能</li>
+                    <li>社群直播購物系統</li>
+                    <li>會員分級／點數／購物金</li>
+                    <li>Facebook／Google／LINE 廣告追蹤</li>
+                    <li>Instagram 購物功能</li>
+                    <li>Facebook／LINE 對話式購物</li>
+                </ul>
+                <a href="#">看更多優惠模組→</a>
+            </div>
+            <div class="intro-item-pic"><img src="/HW04_SHOPLINE/image/intro-3.png" alt=""></div>
+        </div>
+        <div class="intro-item">
+            <div class="intro-item-txt">
+                <h3>O2O 全通路無縫整併<br>輕鬆管理網店、門市以及其他通路</h3>
+                <p>不論是網店拓展門市，還是門市想發展網路生意，從商品、庫存、訂單等各項虛實店舖的資料都能完善整併，輕鬆實現全通路會員經營到多店營運。</p>
+                <ul>
+                    <li>門市 POS 系統</li>
+                    <li>線上線下會員／商品／庫存整合</li>
+                    <li>門市快速集客工具</li>
+                    <li>O2O 即時銷售報表分析</li>
+                    <li>進銷庫存／調撥／多店管理</li>
+                    <li>串接 Shopee 蝦皮購物庫存</li>
+                </ul>
+                <a href="#">了解更多全通路整合→</a>
+            </div>
+            <div class="intro-item-pic"><img src="/HW04_SHOPLINE/image/intro-4.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class="service">
+        <h3>更多功能與服務</h3>
+        <div class="service-item-group">
+            <div class="service-item">
+                <div class="service-item-pic"><img src="/HW04_SHOPLINE/image/service-1.png" alt=""></div>
+                <h3>強大庫存及訂單系統</h3>
+                <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+            </div>
+            <div class="service-item">
+                <div class="service-item-pic"><img src="/HW04_SHOPLINE/image/service-2.png" alt=""></div>
+                <h3>即時化商店業績分析</h3>
+                <p>圖表化報表助你一手掌握商店概況，讓數據助攻企業成長，營運策略更有方向。</p>
+            </div>
+            <div class="service-item">
+                <div class="service-item-pic"><img src="/HW04_SHOPLINE/image/service-3.png" alt=""></div>
+                <h3>多國語系、幣值切換</h3>
+                <p>想做跨境電商也ＯＫ！提供語言、幣別、稅金等進階功能，友善應對海外消費需求。</p>
+            </div>
+            <div class="service-item">
+                <div class="service-item-pic"><img src="/HW04_SHOPLINE/image/service-4.png" alt=""></div>
+                <h3>專業顧問線上支援</h3>
+                <p>迅速、透明的溝通管道，協助你快速解決從線上到線下、從在地到海外的網店疑難。</p>
+            </div>
+            <div class="service-item">
+                <div class="service-item-pic"><img src="/HW04_SHOPLINE/image/service-5.png" alt=""></div>
+                <h3>廣告行銷加值服務</h3>
+                <p>由官方認證的專業投手團隊，協助品牌投遞 Facebook、Google、LINE 等廣告。</p>
+            </div>
+            <div class="service-item">
+                <div class="service-item-pic"><img src="/HW04_SHOPLINE/image/service-6.png" alt=""></div>
+                <h3>老闆專屬成長社群</h3>
+                <p>致力為品牌店家打造能深度交流且互助的生態體系，是拓展人脈、商機的絕佳場域。</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="map">
+        <div class="map-txt">
+            <h4>全亞洲超過<br>250,000 個品牌都在使用 SHOPLINE</h4>
+            <a href="#" class="button">免費試用14天</a>
+        </div>
+        <div class="map-pic"><img src="/HW04_SHOPLINE/image/global.png" alt="地球"></div>
+    </div>
+
+
+    <footer>
+        <div class="footer-list-group">
+            <div class="footer-list-col">
+                <h4>SHOPLINE</h4>
+                <ul>
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="#">認識團隊</a></li>
+                    <li><a href="#">人才招募</a></li>
+                    <li><a href="#">合作機會</a></li>
+                    <li><a href="#">精選夥伴</a></li>
+                    <li><a href="#">媒體報導</a></li>
+                </ul>
+            </div>
+            <div class="footer-list-col">
+                <h4>我要開店</h4>
+                <ul>
+                    <li><a href="#">方案費用</a></li>
+                    <li><a href="#">功能模組</a></li>
+                    <li><a href="#">客戶案例</a></li>
+                    <li><a href="#">開店說明會</a></li>
+                    <li><a href="#">開店諮詢</a></li>
+                </ul>
+            </div>
+            <div class="footer-list-col">
+                <h4>功能特色</h4>
+                <ul>
+                    <li><a href="#">網路開店</a></li>
+                    <li><a href="#">社群服務</a></li>
+                    <li><a href="#">零售POS</a></li>
+                    <li><a href="#">電商物流</a></li>
+                    <li><a href="#">訂單管理</a></li>
+                    <li><a href="#">一頁商店</a></li>
+                </ul>
+            </div>
+            <div class="footer-list-col">
+                <h4>開店資源</h4>
+                <ul>
+                    <li><a href="#">開店秘技</a></li>
+                    <li><a href="#">版型主題</a></li>
+                    <li><a href="#">新手問答</a></li>
+                    <li><a href="#">POS硬體</a></li>
+                </ul>
+            </div>
+            <div class="footer-list-col">
+                <h4>更多解決方案</h4>
+                <ul>
+                    <li><a href="#">企業旗艦方案</a></li>
+                    <li><a href="#">跨境電商方案</a></li>
+                    <li><a href="#">廣告計畫方案</a></li>
+                </ul>
+            </div>
+            <div class="footer-list-col">
+                <h4>其他資源</h4>
+                <ul>
+                    <li><a href="#">電商教室</a></li>
+                    <li><a href="#">充電工作坊</a></li>
+                    <li><a href="#">DreamBig 創品牌</a></li>
+                    <li><a href="#">電商成長學苑</a></li>
+                    <li><a href="#">LINE 官方帳號</a></li>
+                </ul>
+            </div>
+            <div class="footer-list-col">
+                <h4>應用案例</h4>
+                <ul>
+                    <li><a href="#">實體零售</a></li>
+                    <li><a href="#">O2O 全通路</a></li>
+                    <li><a href="#">社交商務</a></li>
+                    <li><a href="#">社群電商工具包</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="covid-19-link">
+            <a href="#">COVID-19 應變措施</a>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-link">
+                <ul>
+                    <li><a href="#">網站地圖</a></li>
+                    <li><a href="#">隱私權政策</a></li>
+                    <li><a href="#">會員條款</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom-social">
+                <a href="#">
+                    <div><i class="fab fa-facebook-f"></i></div>
+                </a>
+                <a href="#">
+                    <div><i class="fab fa-linkedin-in"></i></div>
+                </a>
+                <a href="#">
+                    <div><i class="fab fa-instagram"></i></div>
+                </a>
+                <a href="#">
+                    <div><i class="fab fa-youtube"></i></div>
+                </a>
+                <a href="#">
+                    <div><i class="far fa-comment-dots"></i></div>
+                </a>
+                <a href="#">
+                    <div><i class="far fa-envelope"></i></div>
+                </a>
+            </div>
+            <div class="footer-bottom-copyright">
+                服務時間 星期一至五 上午 10 點至晚上 7 點<br>© Copyright 2013-21 SHOPLINE Limited.
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

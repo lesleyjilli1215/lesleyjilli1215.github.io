@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSMC Line Chart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+        </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron alert-success text-center">
+            <h2>以Line Chart折線圖繪製2020年台積電股價走勢</h2>
+        </div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+
+        const urlTSMC = 'https://raw.githubusercontent.com/apprunner/FileStorage/master/2330.json';
+        var charCanvas, chart, arrTSMC;
+        charCanvas = document.getElementById("myChart");
+
+        window.onload = () => {
+            asyncFetchJSON(urlTSMC)
+                .then(result => {
+                    arrTSMC = JSON.parse(result);
+
+                    return drawChart(arrTSMC.map(x => x.Date), arrTSMC.map(x => x.Price));
+                })
+        }
+
+        function drawChart(dateArray, priceArray) {
+            chart = new Chart(charCanvas, {
+                type: "line",
+                data: {
+                    labels: dateArray,
+                    datasets: [{
+                        label: "TSMC",
+                        data: priceArray,
+                        fill: false,
+                        backgroundColor: 'rgba(255,165,0,0.3)',
+                        borderColor: 'rgb(255,165,0)',
+                        pointStyle: "circle",
+                        pointBackgroundColor: 'rgb(0,255,0)',
+                        pointRadius: 5,
+                        pointHoverRadius: 10,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    title: {
+                        display: true,
+                        fontSize: 26,
+                        text: '2020年台積電股價'
+                    },
+                    tooltips: {
+                        mode: 'point',
+                        intersect: true,
+                    },
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            fontColor: 'black',
+                        }
+                    }
+                }
+            });
+        }
+
+        async function asyncFetchJSON(url) {
+            let response = await fetch(url);
+            let result = await response.text();
+
+            return result;
+        }
+
+    </script>
+
+</body>
+
+</html>
