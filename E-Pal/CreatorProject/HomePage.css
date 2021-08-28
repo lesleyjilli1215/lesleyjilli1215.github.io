@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    }
+
+/* header */
+.wrapper .header{
+    text-align: center;
+    padding: 144px 0 50px;
+    background: url(/E-Pal/CreatorProject/Img_CreatorProjectHomepage/CPH_09.jpg) 50% no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.headerImg{
+    display: block;
+    width: 200px;
+    margin: 0 auto 24px;
+}
+
+.shadowImg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 121px;
+}
+
+.wrapper .header h1{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 48px;
+    margin: 0;
+}
+
+.wrapper .header p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.epalButtonWrapper{
+    display: inline-block;
+}
+
+.epalButtonWrapperPurple{
+    position: relative;
+    border: 0;
+    outline: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 120px;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #625cff, #7041e6);
+    background-size: 100%;
+    border-radius: 400px;
+}
+
+/* firstCard */
+.firstCard{
+    position: relative;
+    padding: 30px 0 56px;
+    background-color: black;
+}
+
+.firstCardContent{
+    margin: 0 25px;
+}
+
+.whatIsACreator{
+    align-items: center;
+    justify-content: space-between;
+    display: block;
+    text-align: center;
+}
+
+.whatIsACreator_info{
+    position: relative;
+}
+
+.whatIsACreator img{
+    width: 250px;
+    height: 160px;
+}
+
+.whatIsACreator_title{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 57px;
+    position: relative;
+}
+
+.whatIsACreator_title:before{
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+    width: 48px;
+    height: 4px;
+    content: "";
+    background: linear-gradient(270deg,#c86398,#7e53f4);
+}
+
+.whatIsACreator_content{
+    margin-top: 16px;
+    font-size: 10px;
+    color: #c4c3e6;
+}
+
+/* secondCard */
+.secondCard{
+    padding: 56px 0;
+    background-color: #21212c
+}
+
+.secondCardContent{
+    margin: 0 5px;
+}
+
+.privilegeTitle{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--font-color-1);
+    line-height: 33px;
+    text-align: center;
+}
+
+.items{
+    display: flex;
+}
+
+.itemImg{
+    width: 30%;
+}
+
+.itemImg img{
+    width: 120px;
+    margin: 30px 0 8px;
+}
+
+.itemText{
+    width: 65%;
+    margin: auto 5px;
+}
+
+.title{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 0px;
+    margin: 30px 0 8px;
+}
+
+.content{
+    font-size: 10px;
+    font-weight: 400;
+    color: #c4c3e6;
+    line-height: 18px;
+}
+
+/* thirdCard */
+.thirdCard{
+    position: relative;
+    padding: 30px 0 100px;
+    background-color: black;
+}
+
+.thirdCardContent{
+    margin: 0 25px;
+}
+
+.whoCanBecomeACreator{
+    align-items: center;
+    justify-content: space-between;
+    display: block;
+    text-align: center;
+}
+
+.whoCanBecomeACreator_info{
+    position: relative;
+}
+
+.whoCanBecomeACreator img{
+    width: 250px;
+    height: 160px;
+}
+
+.whoCanBecomeACreator_title{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 57px;
+    position: relative;
+}
+
+.whoCanBecomeACreator_title:before{
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+    width: 48px;
+    height: 4px;
+    content: "";
+    background: linear-gradient(270deg,#c86398,#7e53f4);
+}
+
+.whoCanBecomeACreator_content{
+    margin-top: 16px;
+    font-size: 10px;
+}
+
+.whoCanBecomeACreator_content p{
+    margin: 0;
+    font-size: 10px;
+    color: #c4c3e6;
+    line-height: 20px;
+    display: flex;
+}
+
+@media screen and (max-width:767px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+    .wrapper .header {
+        padding: 144px 0 60px;
+    }
+
+    .headerImg {
+        width: 300px;
+    }
+
+    .wrapper .header h1 {
+        font-size: 30px;
+    }
+
+    .wrapper .header p {
+        font-size: 20px;
+    }    
+
+    .firstCard {
+        padding: 40px 0 65px;
+    }
+
+    .firstCardContent {
+        margin: 0 80px;
+    }
+
+    .whatIsACreator_title {
+        font-size: 20px;
+        line-height: 65px;
+    }
+
+    .epalButtonWrapperPurple {
+        font-size: 14px;
+        width: 140px;
+    }
+
+    .whatIsACreator_title:before {
+        left: 47%;
+    }
+
+    .whatIsACreator_content {
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    .privilegeTitle {
+        font-size: 20px;
+    }
+
+    .secondCardContent {
+        margin: 0 20px;
+    }
+
+    .itemImg {
+        width: 40%;
+    }
+
+    .itemImg img {
+        width: 220px;
+        margin-left: 35%;
+    }
+
+    .itemText {
+        width: 40%;
+    }
+
+    .title {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .content {
+        font-size: 12px;
+    }
+
+    .thirdCard {
+        padding: 40px 0 120px;
+    }
+
+    .thirdCardContent {
+        margin: 0 80px;
+    }
+
+    .whoCanBecomeACreator_title:before {
+        left: 47%;
+    }
+
+    .whoCanBecomeACreator_content {
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    .whoCanBecomeACreator_title {
+        font-size: 20px;
+        line-height: 65px;
+    }
+
+    .whoCanBecomeACreator_content p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    .wrapper .header {
+        padding: 154px 0 70px;
+    }
+
+    .headerImg {
+        width: 400px;
+    }
+
+    .epalButtonWrapperPurple {
+        font-size: 16px;
+        width: 160px;
+    }
+
+    .firstCard {
+        padding: 50px 0 75px;
+    }
+
+    .firstCardContent {
+        margin: 0 150px;
+    }
+
+    .whatIsACreator img {
+        width: 270px;
+        height: 180px;
+    }
+
+    .whatIsACreator_title {
+        font-size: 22px;
+        line-height: 80px;
+    }
+
+    .whatIsACreator_title:before {
+        left: 48%;
+    }
+
+    .whatIsACreator_content {
+        font-size: 16px;
+    }
+
+    .secondCard {
+        padding: 65px 0;
+    }
+
+    .privilegeTitle {
+        font-size: 22px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .content {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .itemImg img {
+        width: 250px;
+        margin-left: 45%;
+    }
+
+    .thirdCard {
+        padding: 50px 0 130px;
+    }
+
+    .thirdCardContent {
+        margin: 0 150px;
+    }
+
+    .whoCanBecomeACreator img {
+        width: 270px;
+        height: 180px;
+    }
+
+    .whoCanBecomeACreator_title {
+        font-size: 22px;
+        line-height: 80px;
+    }
+
+    .whoCanBecomeACreator_content p {
+        font-size: 16px;
+    }
+
+    .whoCanBecomeACreator_title:before {
+        left: 48%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .headerImg {
+        width: 563px;
+        height: 75px;
+    }
+
+    .wrapper .header h1 {
+        font-size: 48px;
+    }
+
+    .wrapper .header p {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    .epalButtonWrapperPurple {
+        font-size: 18px;
+        width: 180px;
+    }
+
+    .firstCardContent {
+        margin: 0 80px;
+    }
+
+    .whatIsACreator {
+        display: flex;
+    }
+
+    .whatIsACreator img {
+        width: 400px;
+        height: 260px;
+    }
+
+    .whatIsACreator_title {
+        font-size: 24px;
+        display: flex;
+    }
+
+    .whatIsACreator_title:before {
+        left: 0%;
+    }
+
+    .whatIsACreator_content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .items {
+        display: block;
+    }
+
+    .itemImg img {
+        width: 240px;
+        height: 128px;
+        margin-left: auto;
+    }
+
+     .privilegeImgs{
+        display: flex;
+    }
+
+    .secondCardContent {
+        margin: 0 50px;
+    }
+
+    .title {
+        font-size: 14px;
+        margin: 0px 0 12px;
+    }
+
+    .content {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .privilegeTitle {
+        font-size: 24px;
+    }
+
+    .itemText {
+        width: 95%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .thirdCardContent {
+        margin: 0 80px;
+    }
+
+    .whoCanBecomeACreator {
+        display: flex;
+    }
+
+    .whoCanBecomeACreator {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .whoCanBecomeACreator img {
+        width: 400px;
+        height: 262px;
+    }
+
+    .whoCanBecomeACreator_title {
+        font-size: 24px;
+        display: flex;
+    }
+
+    .whoCanBecomeACreator_title:before {
+        left: 0%;
+    }
+
+    .whoCanBecomeACreator_content p {
+        font-size: 14px;
+    }
+
+}
