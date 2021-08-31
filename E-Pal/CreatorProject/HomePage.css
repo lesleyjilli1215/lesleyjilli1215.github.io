@@ -16,7 +16,7 @@
 
 .headerImg{
     display: block;
-    width: 200px;
+    width: 100%;
     margin: 0 auto 24px;
 }
 
@@ -467,11 +467,15 @@
 
     .items {
         display: block;
+        width: 20%;
+    }
+
+    .itemImg{
+        width: 100%;
     }
 
     .itemImg img {
-        width: 240px;
-        height: 128px;
+        width: 100%;
         margin-left: auto;
     }
 

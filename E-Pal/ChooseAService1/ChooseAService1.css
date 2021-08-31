@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: black;
+    }
+
+/* epalPage */
+.epalPage{
+    height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+.pageWrapper{
+    width: 100%;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.content{
+    padding: 100px 20px;
+}
+
+.title{
+    margin-bottom: 24px;
+    line-height: 1;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.pageLoading{
+    position: relative;
+}
+
+.pageContainer{
+    transition: opacity .3s;
+}
+
+.addGame{
+    width: 100%;
+}
+
+.desc{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    color: #c4c3e6;
+    margin-bottom: 24px;
+}
+
+/* gameTabs */
+.gameTabs{
+    margin-bottom: 24px;
+}
+
+.nav-item a{
+    font-size: 14px;
+    color: #c4c3e6;
+}
+
+a:hover {
+    color: #7041e6 !important;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #7041e6 !important;
+}
+
+.nav-tabs .nav-link {
+    border: none !important;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #c4c3e6 !important;
+}
+
+/* list */
+.list{
+    margin: 0 23px 24px 0;
+    cursor: pointer;
+}
