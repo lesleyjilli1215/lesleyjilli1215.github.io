@@ -307,6 +307,10 @@
         margin: 0 80px;
     }
 
+    .whoCanBecomeACreator{
+        justify-content: space-evenly;
+    }
+
     .whoCanBecomeACreator_title:before {
         left: 47%;
     }
@@ -397,6 +401,10 @@
         margin: 0 150px;
     }
 
+    .whoCanBecomeACreator{
+        justify-content: space-evenly;
+    }
+
     .whoCanBecomeACreator img {
         width: 270px;
         height: 180px;
@@ -439,7 +447,7 @@
     }
 
     .firstCardContent {
-        margin: 0 80px;
+        margin: 0 100px;
     }
 
     .whatIsACreator {
@@ -513,6 +521,7 @@
 
     .whoCanBecomeACreator {
         display: flex;
+        justify-content: space-evenly;
     }
 
     .whoCanBecomeACreator {
@@ -536,6 +545,22 @@
 
     .whoCanBecomeACreator_content p {
         font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width:1800px) {
+
+    .whoCanBecomeACreator {
+        justify-content: space-evenly;
+    }
+
+    .whatIsACreator{
+        justify-content: space-evenly;
+    }
+
+    .firstCardContent {
+        margin: 0 300px;
     }
 
 }
