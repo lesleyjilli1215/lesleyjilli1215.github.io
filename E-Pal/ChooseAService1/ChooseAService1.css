@@ -196,3 +196,43 @@ a:hover {
     background-size: 100%;
     border-radius: 400px;
 }
+
+@media screen and (max-width:767px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+    .list{
+        display: grid;
+        grid-template-columns: repeat(2,120%);
+    }
+
+}
+
+@media screen and (min-width:992px) {
+
+    .list{
+        display: grid;
+        grid-template-columns: repeat(3,120%);
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+
+    .list{
+        display: grid;
+        grid-template-columns: repeat(4,120%);
+    }
+
+}
+
+@media screen and (min-width:1800px) {
+
+    .list{
+        display: grid;
+        grid-template-columns: repeat(5,120%);
+    }
+
+}
