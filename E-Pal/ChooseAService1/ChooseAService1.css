@@ -79,7 +79,7 @@ a:hover {
 /* list */
 .list{
     width: 253px;
-    margin: 0 23px 24px 0;
+    margin: 25px 35px 0;
     cursor: pointer;
 }
 
@@ -177,6 +177,7 @@ a:hover {
 /* button */
 .epalButtonWrapper{
     display: inline-block;
+    margin: 25px 35px 0;
 }
 
 .epalButtonWrapperPurple{
@@ -208,6 +209,14 @@ a:hover {
         grid-template-columns: repeat(2,120%);
     }
 
+    .list{
+        margin: 0 23px 24px 0;
+    }
+
+    .epalButtonWrapper{
+        margin: 0 23px 24px 0;
+    }
+
 }
 
 @media screen and (min-width:992px) {
@@ -215,6 +224,14 @@ a:hover {
     .list{
         display: grid;
         grid-template-columns: repeat(3,120%);
+    }
+
+    .list{
+        margin: 0 23px 24px 0;
+    }
+
+    .epalButtonWrapper{
+        margin: 0 23px 24px 0;
     }
 
 }
@@ -226,13 +243,46 @@ a:hover {
         grid-template-columns: repeat(4,120%);
     }
 
+    .list{
+        margin: 0 23px 24px 0;
+    }
+
+    .epalButtonWrapper{
+        margin: 0 23px 24px 0;
+    }
+
+}
+
+@media screen and (min-width:1500px) {
+
+    .list{
+        display: grid;
+        grid-template-columns: repeat(5,120%);
+    }
+
+    .list{
+        margin: 0 23px 24px 0;
+    }
+
+    .epalButtonWrapper{
+        margin: 0 23px 24px 0;
+    }
+
 }
 
 @media screen and (min-width:1800px) {
 
     .list{
         display: grid;
-        grid-template-columns: repeat(5,120%);
+        grid-template-columns: repeat(6,120%);
+    }
+
+    .list{
+        margin: 0 23px 24px 0;
+    }
+
+    .epalButtonWrapper{
+        margin: 0 23px 24px 0;
     }
 
 }
