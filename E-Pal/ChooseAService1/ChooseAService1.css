@@ -78,11 +78,13 @@ a:hover {
 
 /* list */
 .list{
+    width: 253px;
     margin: 0 23px 24px 0;
     cursor: pointer;
 }
 
 .gameCard{
+    width: 253px;
     margin: 0 23px 24px 0;
     cursor: pointer;
 }
@@ -164,10 +166,33 @@ a:hover {
 }
 
 /* desc */
-.desc{
+.gameCard .desc{
     font-size: 12px;
     font-weight: 400;
     color: #c4c3e6;
     line-height: 18px;
     margin-top: 4px;
+}
+
+/* button */
+.epalButtonWrapper{
+    display: inline-block;
+}
+
+.epalButtonWrapperPurple{
+    position: relative;
+    border: 0;
+    outline: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 120px;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #625cff, #7041e6);
+    background-size: 100%;
+    border-radius: 400px;
 }
