@@ -25,28 +25,84 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body  style="background-color: #120E1B;">
+<body style="background-color: #120E1B;">
 
-    <!-- epalPage -->
-    <div class="epalPage1">
-        <div class="pageWrapper">
+    <!-- epalPage2 -->
+    <div class="epalPage2">
+        <div class="page2Wrapper">
             <div class="content">
                 <div class="title">Basic Information ( 2/4 )</div>
 
-                <!-- pageLoading -->
-                <div class="pageLoading">
-                    <div class="pageContainer">
-                        <div class="addGame">
-                            <p class="desc">The information you submit will not be disclosed to third parties, and we promise to keep your information absolutely confidential</p>
+                <!-- page2Loading -->
+                <div class="page2Loading">
+                    <div class="page2Container">
+                        <div class="addForm">
+                            <p class="desc">The information you submit will not be disclosed to third parties, and we
+                                promise to keep your information absolutely confidential</p>
                         </div>
                     </div>
+                </div>
+
+                <!-- form -->
+                <div class="formWrapper">
+                    <div class="formMain">
+                        <!-- State -->
+                        <p>State</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Set yourself to Online (ready to take orders)</option>
+                            <option value="1">Set yourself to Offline (not ready to take orders)</option>
+                        </select>
+
+                        <!-- Price -->
+                        <p>Price</p>
+                        <div class="priceSelect">
+                            <form class="row row-cols-lg-auto g-3 align-items-center">
+                                <div class="col-12-1">
+                                    <label class="visually-hidden" for="inlineFormInputGroupUsername">2</label>
+                                    <div class="input-group">
+                                        <div class="input-group-text">
+                                            <img src="/E-Pal/BasicInformation2/img_BasicInformation2/price.png"
+                                                alt="priceIcon">
+                                        </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                            placeholder="2">
+                                    </div>
+                                </div>
+
+                                <div class="col-12-2">
+                                    <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                                    <select class="form-select" id="inlineFormSelectPref">
+                                        <option selected>/30Min</option>
+                                        <option value="1">/Game</option>
+                                        <option value="2">/15Min</option>
+                                        <option value="3">/30Min</option>
+                                        <option value="4">/Hour</option>
+                                        <option value="5">/Time</option>
+                                    </select>
+                                </div>
+
+                                <div class="servicePriceQue">
+                                    <div class="icon">?</div>
+                                </div>
+                        </div>
+
+                        <!-- Timepicker -->
+                        <p>Price</p>
+
+                    </div>
+                    <div class="formLine"></div>
                 </div>
 
                 <!-- footer -->
                 <div class="footer">
                     <div class="buttonWrapper">
-                        <div class="epalButtonWrapper">
-                            <button type="button" class="epalButtonWrapperPurple" onclick="">
+                        <div class="preButtonWrapper">
+                            <button type="button" class="preButtonWrapperGrey" onclick="">
+                                <span>Previous</span>
+                            </button>
+                        </div>
+                        <div class="nextButtonWrapper">
+                            <button type="button" class="nextButtonWrapperGrey" onclick="">
                                 <span>Next</span>
                             </button>
                         </div>

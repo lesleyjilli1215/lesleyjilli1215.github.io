@@ -5,14 +5,14 @@
     color: white;
     }
 
-/* epalPage */
-.epalPage{
+/* epalPage2 */
+.epalPage2{
     height: 100%;
     overflow: auto;
     position: relative;
 }
 
-.pageWrapper{
+.page2Wrapper{
     width: 100%;
     background-position: 50%;
     background-size: cover;
@@ -29,16 +29,16 @@
     font-weight: 500;
 }
 
-/* pageLoading */
-.pageLoading{
+/* page2Loading */
+.page2Loading{
     position: relative;
 }
 
-.pageContainer{
+.page2Container{
     transition: opacity .3s;
 }
 
-.addGame{
+.addForm{
     width: 100%;
 }
 
@@ -50,27 +50,131 @@
     margin-bottom: 24px;
 }
 
+/* form */
+/* State */
+.formMain p{
+    font-size: 12px;
+    color: #c4c3e6;
+    margin-bottom: 0.2rem !important;
+}
 
-/* button */
-.epalButtonWrapper{
+.form-select{
+    font-size: 12px !important;
+    color: white !important;
+    background-color: #302F3D !important;
+    border: 0.5px solid #ced4da !important;
+    margin-bottom: 1.5rem !important;
+}
+
+/* Price */
+
+.col-12-2{
+    flex: 60% !important;
+}
+
+.input-group .form-control{
+    font-size: 12px !important;
+    color: white !important;
+    background-color: #302F3D !important;
+    border: 0.5px solid #ced4da !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.input-group-text{
+    background-color: #302F3D !important;
+    border: 0.5px solid #ced4da !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.input-group-text img{
+    width: 20px;
+    height: 20px;
+}
+
+.servicePriceQue{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    right: -35px; */
+    flex: 1;
+    display: contents;
+}
+
+.servicePriceQue .icon{
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background: #302F3D;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.formLine{
+    margin-bottom: 24px;
+    border-top: 1px solid #4F4E60;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* footer */
+
+.buttonWrapper{
+    display: flex;
+}
+
+.preButtonWrapper{
     display: inline-block;
     margin: 0 23px 24px 0;
 }
 
-.epalButtonWrapperPurple{
+.preButtonWrapperGrey{
     position: relative;
     border: 0;
     outline: 0;
     margin-top: 5%;
     margin-bottom: 5%;
-    width: 120px;
-    padding: 6px;
+    width: 150px;
+    padding: 9px;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     box-sizing: border-box;
-    background: linear-gradient(90deg, #625cff, #7041e6);
+    background: #21212C;
     background-size: 100%;
     border-radius: 400px;
+}
+
+.nextButtonWrapper{
+    display: inline-block;
+    margin: 0 23px 24px 0;
+}
+
+.nextButtonWrapperGrey{
+    position: relative;
+    border: 0;
+    outline: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 150px;
+    padding: 9px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    background: transparent;
+    background-size: 100%;
+    border-radius: 400px;
+}
+
+.nextButtonWrapperGrey span{
+    color: grey;
 }
