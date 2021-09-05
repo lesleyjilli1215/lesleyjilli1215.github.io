@@ -52,6 +52,10 @@
 
 /* form */
 /* State */
+.formWrapper{
+    width: 100%;
+}
+
 .formMain p{
     font-size: 12px;
     color: #c4c3e6;
@@ -67,9 +71,12 @@
 }
 
 /* Price */
+.col-12-1{
+    flex: 60% !important;
+}
 
 .col-12-2{
-    flex: 60% !important;
+    flex: 30% !important;
 }
 
 .input-group .form-control{
