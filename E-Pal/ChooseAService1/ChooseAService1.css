@@ -55,6 +55,21 @@
     margin-bottom: 24px;
 }
 
+.nav-item:hover{
+    border-bottom: 6px solid transparent !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+    transition: color .3s !important;
+    margin: 0 3px !important;
+    border-color: #7041e6 !important;
+}
+
+.purple-text-border {
+    color: #7041e6 !important;
+    border-color: #7041e6 !important;
+}
+
 .nav-item a{
     font-size: 14px;
     color: #c4c3e6;
