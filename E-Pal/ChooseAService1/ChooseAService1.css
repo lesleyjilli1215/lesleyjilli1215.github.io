@@ -54,6 +54,9 @@
 .gameTabs{
     margin-bottom: 24px;
 }
+.nav-item{
+    margin-bottom: 6px;
+}
 
 .nav-item:hover{
     border-bottom: 6px solid transparent !important;
