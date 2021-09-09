@@ -134,9 +134,13 @@ a:hover {
     overflow: hidden;
 }
 
-/* .activeNow{
+.gameActive:active{
     border-color: #7041e6;
-} */
+}
+
+.activeNow:hover{
+    border-color: #7041e6;
+}
 
 .imgMain img{
     width: 100%;
