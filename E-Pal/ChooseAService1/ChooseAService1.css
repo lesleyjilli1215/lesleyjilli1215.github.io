@@ -243,6 +243,16 @@ a:hover {
     border-color: #2f244d !important;
 }
 
+/* selectgameAction */
+
+.selectgameAction{
+    border-color: #7041e6;
+}
+
+/* .chooseBtnImg img{
+    background-image: url(/E-Pal/ChooseAService1/Img_ChooseAService1/Vc.png);
+} */
+
 @media screen and (max-width:767px) {
 
 }

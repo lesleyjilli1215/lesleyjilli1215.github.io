@@ -1444,7 +1444,16 @@
     </div>
 
     <script>
+        function changePic() {
 
+            var gameActive = document.getElementsByClassName("gameActive");
+
+            gameActive.onclick = function () {
+
+                gameActive.className = 'selectgameAction';
+            }
+        }
+        changePic();
     </script>
 
 </body>
