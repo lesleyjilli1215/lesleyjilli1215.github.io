@@ -142,7 +142,7 @@ border-left: #7041e6 !important;
 }
 
 .voiceDesc{
-    margin: 8px 0 0;
+    margin: 4px 0 0;
 }
 
 /* listCover */
@@ -151,7 +151,7 @@ border-left: #7041e6 !important;
 }
 
 .coverDesc{
-    margin: 8px 0 0;
+    margin: 4px 0 0;
 }
 
 .wrapper {
@@ -166,6 +166,7 @@ border-left: #7041e6 !important;
 .upload_cover{
     width: 104px !important;
     height: 104px !important;
+    margin-top: 10px !important;
     background: #21212C !important;
     border-radius: 8px !important;
     display: flex !important;
@@ -200,7 +201,7 @@ border-left: #7041e6 !important;
 }
 
 .svDesc{
-    margin: 8px 0 0;
+    margin: 4px 0 0;
 }
 
 /* footer */
