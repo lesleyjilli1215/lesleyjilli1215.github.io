@@ -136,6 +136,14 @@ border-left: #7041e6 !important;
     font-size: 14px;
 } 
 
+/* voiceRecord */
+.voiceRecord{
+    margin: 24px 0 0;
+}
+
+.voiceDesc{
+    margin: 8px 0 0;
+}
 
 /* footer */
 
