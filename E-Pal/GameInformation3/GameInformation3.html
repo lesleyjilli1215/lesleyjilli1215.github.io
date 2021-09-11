@@ -42,7 +42,7 @@
                     <div class="page2Container">
                         <div class="addForm">
                             <p class="desc">The information you submit will not be disclosed to third parties, and we
-                                promise to keep your information absolutely confidential</p>
+                                promise to keep your information absolutely confidential.</p>
                         </div>
                     </div>
                 </div>
@@ -133,8 +133,7 @@
 
                         <div class="intro">
                             <div class="introTitle">Introduction</div>
-                            <p class="introDesc">The first 1 or 2 sentences of your introduction will be displayed on
-                                your ePal cover card
+                            <p class="introDesc">The first 1 or 2 sentences of your introduction will be displayed on your ePal cover card.
                             </p>
 
                             <div class="form-floating">
@@ -155,26 +154,42 @@
                             </p>
                         </div>
 
-                        <div class="listRecord">
-                            <div class="listTitle">List Cover</div>
-                            <p class="listDesc">
+                        <div class="listCover">
+                            <div class="coverTitle">List Cover</div>
+                            <p class="coverDesc">
                                 Upload your selfie here as the cover of this game
-                                <br> We will rate your List Cover based on what the clients prefer. 
+                                <br> We will rate your List Cover based on what the clients prefer.
                             </p>
                             <div class="wrapper">
                                 <div class="mb-3">
-                                  <label class="bordersize upload_cover">
-                                    <input id="upload_input" type="file">
-                                    <span class="upload_icon">
-                                        <i class="far fa-images"></i>
-                                    </span>
-                                    <i class="delAvatar fa fa-times-circle-o" title="刪除"></i>
-                                  </label>
+                                    <label class="bordersize upload_cover">
+                                        <input id="upload_input" type="file">
+                                        <div class="upload_icon">
+                                            <img src="/E-Pal/GameInformation3/Img_GameInformation3/addpic.png" alt="">
+                                        </div>
+                                        <i class="delAvatar fa fa-times-circle-o" title="delete"></i>
+                                    </label>
                                 </div><br>
-                              </div><br>
-                              <div>
+                            </div><br>
                         </div>
 
+                        <div class="screenVideos">
+                            <div class="svTitle">Screenshots or Videos</div>
+                            <p class="svDesc">
+                                Showcase your skills by uploading a screenshot or video clip.
+                            </p>
+                            <div class="wrapper">
+                                <div class="mb-3">
+                                    <label class="bordersize upload_cover">
+                                        <input id="upload_input" type="file">
+                                        <div class="upload_icon">
+                                            <img src="/E-Pal/GameInformation3/Img_GameInformation3/addpic.png" alt="">
+                                        </div>
+                                        <i class="delAvatar fa fa-times-circle-o" title="delete"></i>
+                                    </label>
+                                </div><br>
+                            </div><br>
+                        </div>
 
                         <div class="formLine"></div>
 
@@ -193,7 +208,8 @@
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
                                         checked>
                                     <label class="form-check-label" for="flexCheckChecked">
-                                        By clicking submit button, you are indicating that you have read and acknowledge
+                                        By clicking submit button, you are indicating that you have read and
+                                        acknowledge
                                         the <a href="https://policies.epal.gg/epal.html?theme=dark">
                                             E-Pal Platform Agreement</a> .
                                     </label>
@@ -204,17 +220,19 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <script>
-                $(document).ready(function () {
-                    var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
-                        removeItemButton: true,
-                        maxItemCount: 17,
-                        searchResultLimit: 17,
-                        renderChoiceLimit: 17
-                    });
-                });
-            </script>
+    <script>
+        $(document).ready(function () {
+            var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+                removeItemButton: true,
+                maxItemCount: 17,
+                searchResultLimit: 17,
+                renderChoiceLimit: 17
+            });
+        });
+    </script>
 
 </body>
 
