@@ -299,6 +299,10 @@
     border-color: #7041e6 !important;
 }
 
+.form-check-label{
+    font-size: 12px !important;
+}
+
 a {
     color: #7041e6 !important;
 }
