@@ -247,6 +247,10 @@ a {
 
 @media screen and (min-width:1200px) {
 
+    .epalPage2{
+        width: 650px;
+    }
+
     .icon{
         position: relative;
     }
