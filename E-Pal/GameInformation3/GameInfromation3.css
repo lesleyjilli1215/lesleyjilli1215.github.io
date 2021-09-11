@@ -197,11 +197,21 @@ border-left: #7041e6 !important;
 /* screenVideos */
 
 .screenVideos{
-    margin: 24px 0 0;
+    margin-bottom: 35px !important
 }
 
 .svDesc{
     margin: 4px 0 0;
+}
+
+.svContainer{
+    display: flex;
+}
+
+.wrapper2 {
+    margin-left: 20px;
+    height: 100px !important;
+    width: 100px !important;
 }
 
 /* footer */
