@@ -294,6 +294,15 @@
     border-color: #2f244d !important;
 }
 
+.form-check-input:checked {
+    background-color: #7041e6 !important;
+    border-color: #7041e6 !important;
+}
+
+a {
+    color: #7041e6 !important;
+}
+
 @media screen and (max-width:767px) {
 
 }
