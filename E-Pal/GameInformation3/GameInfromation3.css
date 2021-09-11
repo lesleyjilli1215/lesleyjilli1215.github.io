@@ -300,6 +300,10 @@ a {
 
 @media screen and (min-width:768px) {
 
+    .epalPage2{
+        width: 650px;
+    }
+
     .icon{
         position: relative;
     }
@@ -307,6 +311,10 @@ a {
 }
 
 @media screen and (min-width:996px) {
+
+    .epalPage2{
+        width: 650px;
+    }
 
     .icon{
         position: relative;
