@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    }
+
+/* ruleSR */
+.ruleSR{
+    height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+.ruleSRWrapper{
+    width: 100%;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.content{
+    padding: 100px 20px;
+}
+
+.titleContent{
+    display: flex;
+}
+
+.btn{
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 30% !important;
+}
+
+.title{
+    margin-left: 15px;
+    margin-bottom: 24px;
+    line-height: 1;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* ruleSRLoading */
+.ruleSRLoading{
+    position: relative;
+}
+
+.ruleSRContainer{
+    transition: opacity .3s;
+}
+
+.addForm{
+    width: 100%;
+}
+
+.desc{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: #c4c3e6;
+    margin-bottom: 24px;
+}
+
+a {
+    color: #7041e6 !important;
+}
+
+p{
+    font-size: 12px;
+    color: #c4c3e6;
+}
+
+/* List Cover Photos: */
+.listCover{
+    margin-top: 35px;
+}
+
+/* Examples of good images & bad images */
+.exampleImg{
+    margin-top: 35px;
+}
+
+.exContainer{
+    display: grid !important;
+    grid-template-columns: repeat(2,50%) !important;
+}
+
+.card{
+    width: 100% !important;
+    color: #c4c3e6 !important;
+    background-color: #21212C !important;
+}
+
+.btnImg{
+    display: flex;
+}
+
+.btnImg img{
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.card-title{
+    margin-left: 5px;
+    font-size: 12px !important;
+    color: white !important;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card-body{
+    width: 100%;
+}
+
+.card-body {
+    padding: 0.5rem 0.5rem !important;
+}
+
+@media screen and (max-width:767px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+    .ruleSR{
+        width: 650px;
+    }
+
+    .titleContent {
+        align-items: baseline;
+    }
+
+}
+
+@media screen and (min-width:996px) {
+
+    .ruleSR{
+        width: 650px;
+    }
+
+    .titleContent {
+        align-items: baseline;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+
+    .ruleSR{
+        width: 650px;
+    }
+
+    .titleContent {
+        align-items: baseline;
+    }
+
+}
