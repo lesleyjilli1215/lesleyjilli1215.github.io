@@ -247,6 +247,7 @@ border-left: #7041e6 !important;
 }
 
 .btn-secondary {
+    font-size: 15px !important;
     background-color: transparent !important;
 }
 
@@ -256,6 +257,7 @@ border-left: #7041e6 !important;
 }
 
 .btn-primary {
+    font-size: 15px !important;
     color: #fff !important;
     background-color: #212529 !important;
     border-color: #6a6a77 !important;
