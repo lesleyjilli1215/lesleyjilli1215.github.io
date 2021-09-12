@@ -89,8 +89,8 @@ p{
 
 @media screen and (min-width:768px) {
 
-    .postAVideo{
-        width: 650px;
+    .content {
+        width: 750px;
     }
 
     .titleContent {
@@ -105,8 +105,8 @@ p{
 
 @media screen and (min-width:996px) {
 
-    .postAVideo{
-        width: 650px;
+    .content {
+        width: 750px;
     }
 
     .titleContent {
@@ -121,8 +121,8 @@ p{
 
 @media screen and (min-width:1200px) {
 
-    .postAVideo{
-        width: 650px;
+    .content {
+        width: 750px;
     }
 
     .titleContent {
@@ -132,5 +132,5 @@ p{
     .postAVideoImg img{
         width: 695px;
     }
-    
+
 }
