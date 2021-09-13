@@ -82,7 +82,7 @@
                                             </div>
                                             <div class="chooseBtn">
                                                 <div class="chooseBtnImg">
-                                                    <img src="/E-Pal/ChooseAService1/Img_ChooseAService1/V.png" alt="">
+                                                    <img id="btnImg" src="/E-Pal/ChooseAService1/Img_ChooseAService1/V.png" alt="">
                                                 </div>
                                                 <span>League of Legends</span>
                                             </div>
@@ -104,7 +104,7 @@
                                             </div>
                                             <div class="chooseBtn">
                                                 <div class="chooseBtnImg">
-                                                    <img src="/E-Pal/ChooseAService1/Img_ChooseAService1/V.png" alt="">
+                                                    <img id="btnImg" src="/E-Pal/ChooseAService1/Img_ChooseAService1/V.png" alt="">
                                                 </div>
                                                 <span>E-Chat</span>
                                             </div>
@@ -649,7 +649,7 @@
 
                                         <!-- Borderlands 3 -->
                                         <div class="gameCard">
-                                            <div class="gameActive activeNow"onclick="changeStyle(this)">
+                                            <div class="gameActive activeNow" onclick="changeStyle(this)">
                                                 <div class="imgMain">
                                                     <img src="/E-Pal/ChooseAService1/Img_ChooseAService1/CAS26.jpg"
                                                         alt="">
@@ -1445,14 +1445,22 @@
 
     <script>
 
+        // changeStyle
         function changeStyle(element) {
-            // document.getElementsByClassName("gameActive")[0].style.borderColor = "#7041e6";
+
             var gameActive = document.getElementsByClassName("gameActive");
-            for(let el of gameActive) {
+            var btnImg = document.getElementById("btnImg");
+            
+            for (let el of gameActive) {
                 el.style.borderColor = '#120E1B';
+                btnImg.src = "/E-Pal/ChooseAService1/Img_ChooseAService1/Vc.png";
             }
             element.style.borderColor = "#7041e6";
+
         }
+
+        // changeImg
+
 
     </script>
 
