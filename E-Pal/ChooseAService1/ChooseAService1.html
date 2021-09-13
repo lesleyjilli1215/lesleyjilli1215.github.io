@@ -69,7 +69,7 @@
                                     <div class="list">
                                         <!-- League of Legends -->
                                         <div class="gameCard">
-                                            <div class="gameActive activeNow">
+                                            <div class="gameActive activeNow" onclick="changeStyle(this)">
                                                 <div class="imgMain">
                                                     <img src="/E-Pal/ChooseAService1/Img_ChooseAService1/CAS01.jpg"
                                                         alt="">
@@ -91,7 +91,7 @@
 
                                         <!-- E-Chat -->
                                         <div class="gameCard">
-                                            <div class="gameActive activeNow">
+                                            <div class="gameActive activeNow" onclick="changeStyle(this)">
                                                 <div class="imgMain">
                                                     <img src="/E-Pal/ChooseAService1/Img_ChooseAService1/CAS02.jpg"
                                                         alt="">
@@ -113,7 +113,7 @@
 
                                         <!-- Movie -->
                                         <div class="gameCard">
-                                            <div class="gameActive activeNow">
+                                            <div class="gameActive activeNow" onclick="changeStyle(this)">
                                                 <div class="imgMain">
                                                     <img src="/E-Pal/ChooseAService1/Img_ChooseAService1/CAS04.jpg"
                                                         alt="">
@@ -135,7 +135,7 @@
 
                                         <!-- Valorant -->
                                         <div class="gameCard">
-                                            <div class="gameActive activeNow">
+                                            <div class="gameActive activeNow" onclick="changeStyle(this)">
                                                 <div class="imgMain">
                                                     <img src="/E-Pal/ChooseAService1/Img_ChooseAService1/CAS05.jpg"
                                                         alt="">
@@ -1444,16 +1444,16 @@
     </div>
 
     <script>
-        function changePic() {
 
+        function changeStyle(element) {
+            // document.getElementsByClassName("gameActive")[0].style.borderColor = "#7041e6";
             var gameActive = document.getElementsByClassName("gameActive");
-
-            gameActive.onclick = function () {
-
-                gameActive.className = 'selectgameAction';
+            for(let el of gameActive) {
+                el.style.borderColor = '#120E1B';
             }
+            element.style.borderColor = "#7041e6";
         }
-        changePic();
+
     </script>
 
 </body>
