@@ -125,7 +125,7 @@ a:hover {
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
-    padding: 16px 0 !important;
+    padding: 12px 0 !important;
     color: #fff !important;
 }
 
@@ -237,7 +237,7 @@ a:hover {
 
 .followButton{
     display: inline-block;
-    margin: 0 18px 24px 0;
+    margin: 0 18px 0px 0;
 }
 
 .btn-outline-secondary{
@@ -275,7 +275,7 @@ a:hover {
 
 .chatButton{
     display: inline-block;
-    margin: 0 23px 24px 0;
+    margin: 0 23px 0px 0;
 }
 
 .btn-outline-dark{
