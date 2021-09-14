@@ -82,7 +82,7 @@
                                             </div>
                                             <div class="chooseBtn">
                                                 <div class="chooseBtnImg">
-                                                    <img id="btnImg" src="/E-Pal/ChooseAService1/Img_ChooseAService1/V.png" alt="">
+                                                    <img class="btnImg" src="/E-Pal/ChooseAService1/Img_ChooseAService1/V.png" alt="">
                                                 </div>
                                                 <span>League of Legends</span>
                                             </div>
@@ -104,7 +104,7 @@
                                             </div>
                                             <div class="chooseBtn">
                                                 <div class="chooseBtnImg">
-                                                    <img id="btnImg" src="/E-Pal/ChooseAService1/Img_ChooseAService1/V.png" alt="">
+                                                    <img class="btnImg" src="/E-Pal/ChooseAService1/Img_ChooseAService1/V.png" alt="">
                                                 </div>
                                                 <span>E-Chat</span>
                                             </div>
@@ -1448,12 +1448,12 @@
         // changeStyle
         function changeStyle(element) {
 
-            var gameActive = document.getElementsByClassName("gameActive");
-            var btnImg = document.getElementById("btnImg");
+            let gameActive = document.getElementsByClassName("gameActive");
+            let btnImg = document.getElementsByClassName("btnImg");
             
             for (let el of gameActive) {
                 el.style.borderColor = '#120E1B';
-                btnImg.src = "/E-Pal/ChooseAService1/Img_ChooseAService1/Vc.png";
+                // btnImg.src = "/E-Pal/ChooseAService1/Img_ChooseAService1/Vc.png";
             }
             element.style.borderColor = "#7041e6";
 
