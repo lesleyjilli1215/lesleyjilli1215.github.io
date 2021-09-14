@@ -109,12 +109,111 @@ a:hover {
 }
 
 /* list */
-/* .list{
-    width: 253px;
-    margin: 25px 35px 0;
-    margin-top: 25px !important;
-    cursor: pointer;
-} */
+
+.list-group{
+    border-radius: 0rem !important;
+    width: 1200px;
+}
+
+.list-group-item {
+    color: #212529;
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+}
+
+.list-group-item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 16px 0 !important;
+    color: #fff !important;
+}
+
+.listCard{
+    display: flex;
+    min-width: 0;
+}
+
+.profileAvatar{
+    width: 58px;
+    height: 58px; margin-right: 6px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.antAvatar{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: "tnum","tnum";
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    background: #ccc;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    width: 50px; 
+    height: 48px; 
+    line-height: 48px; font-size: 18px;
+}
+
+.antAvatar img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.antStatus{
+    position: unset;
+    bottom: 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    margin-top: 40px;
+}
+
+.onlineStatus{
+    display: flex;
+    align-items: center;
+}
+
+.offlineStatus{
+    display: flex;
+    align-items: center;
+}
+
+.smallIncon{
+    display: inline;
+}
+
+.iconImg{
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 18px;
+    background: transparent;
+    border-radius: 2px;
+}
+
+.iconImg img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .nobody{
     margin: auto;
@@ -129,6 +228,80 @@ a:hover {
     font-size: 16px;
     margin-top: 30px;
     text-align:center;
+}
+
+/* button */
+.listButton{
+    display: flex;
+}
+
+.followButton{
+    display: inline-block;
+    margin: 0 18px 24px 0;
+}
+
+.btn-outline-secondary{
+    color: white !important;
+    position: relative !important;
+    border: 0 !important;
+    outline: 0 !important;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+    width: 120px !important;
+    padding: 9px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    box-sizing: border-box !important;
+    border: 1px solid #21212C !important;
+    background: #21212C !important;
+    background-size: 100% !important;
+    border-radius: 400px !important;
+}
+
+.btn-outline-secondary:hover {
+    color: white !important;
+    background-color: #4f4e60 !important;
+    border-color: #4f4e60 !important;
+}
+
+.btn-outline-secondary:active {
+    
+    color: white !important;
+    background-color: #4f4e60 !important;
+    border-color: #4f4e60 !important;
+}
+
+.chatButton{
+    display: inline-block;
+    margin: 0 23px 24px 0;
+}
+
+.btn-outline-dark{
+    position: relative !important;
+    border: 0 !important;
+    outline: 0 !important;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+    width: 120px !important;
+    padding: 9px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    box-sizing: border-box !important;
+    border: 1px solid #7041e6 !important;
+    color: white !important;
+    background: #7041e6 !important;
+    background-size: 100% !important;
+    border-radius: 400px !important;
+}
+
+.btn-outline-dark:hover {
+    color: white !important;
+    background-color: #7041e6 !important;
+    border-color: #2f244d !important;
 }
 
 @media screen and (max-width:767px) {
@@ -215,6 +388,10 @@ a:hover {
         font-size: 22px;
         margin-top: 50px;
         text-align:center;
+    }
+
+    .list-group{
+        width: 1150px;
     }
 
 }
