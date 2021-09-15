@@ -133,6 +133,7 @@ a:hover {
     min-width: 0;
 }
 
+/* profileAvatar */
 .profileAvatar{
     width: 58px;
     height: 58px; margin-right: 6px;
@@ -214,6 +215,65 @@ a:hover {
     object-fit: cover;
 }
 
+/* profilebox */
+
+.listCard .profileInfo{
+    flex: 1 1;
+    min-width: 0;
+}
+
+.listCard .profileBox .profileInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profileInfo{
+    height: 58px;
+}
+
+.listCard .profileBox .profileInfo .infoTitle{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.infoTitle a{
+    color: #7041e6;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.paragraph{
+    word-break: break-word;
+}
+
+.name{
+    min-width: 0;
+    margin-right: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    line-height: 25px;
+}
+
+.paragraph .antTypography{
+    margin: 0;
+}
+
+.name .antTypography{
+    font-size: 14px;
+    color: white;
+}
+
+.antTypographyLine{
+    white-space: nowrap;
+}
+
+/* nobody */
 .nobody{
     margin: auto;
 }
