@@ -326,6 +326,29 @@ a:hover {
     object-fit: cover;
 }
 
+.infoFollow{
+    display: inline-flex;
+    gap: 8px;
+}
+
+.infoFollowAlign{
+    align-items: center;
+}
+
+.infoFollowDesc{
+    color: #C4C3E6;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.antFollowing{
+    color: #C4C3E6;
+}
+
+.antFollowers{
+    color: #C4C3E6;
+}
+
 /* nobody */
 .nobody{
     margin: auto;
