@@ -112,7 +112,6 @@ a:hover {
 
 .list-group{
     border-radius: 0rem !important;
-    width: 1200px;
 }
 
 .list-group-item {
@@ -334,6 +333,10 @@ a:hover {
         text-align:center;
     }
 
+    .list-group{
+        width: 85%;
+    }
+
 }
 
 @media screen and (min-width:996px) {
@@ -362,6 +365,9 @@ a:hover {
         text-align:center;
     }
 
+    .list-group{
+        width: 85%;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -391,7 +397,6 @@ a:hover {
     }
 
     .list-group{
-        width: 1150px;
+        width: 85%;
     }
-
 }
