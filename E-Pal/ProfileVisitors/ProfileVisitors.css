@@ -372,7 +372,6 @@ a:hover {
 
 .followButton{
     display: inline-block;
-    margin: 0 18px 0px 0;
 }
 
 .btnfollowing{
@@ -510,6 +509,11 @@ a:hover {
         font-size: 14px !important;
     }
 
+    .followButton{
+        display: inline-block;
+        margin: 0 18px 0px 0;
+    }
+
 }
 
 @media screen and (min-width:996px) {
@@ -559,6 +563,11 @@ a:hover {
         font-size: 14px !important;
     }
 
+    .followButton{
+        display: inline-block;
+        margin: 0 18px 0px 0;
+    }
+
 }
 
 @media screen and (min-width:1200px) {
@@ -606,6 +615,11 @@ a:hover {
 
     .btn-outline-dark{
         font-size: 14px !important;
+    }
+
+    .followButton{
+        display: inline-block;
+        margin: 0 18px 0px 0;
     }
 
 }
