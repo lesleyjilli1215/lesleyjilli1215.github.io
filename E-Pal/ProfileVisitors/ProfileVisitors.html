@@ -121,7 +121,8 @@
                                                 </div>
                                                 <div class="listButton">
                                                     <div class="followButton">
-                                                        <button class="btnfollowing" id="followButton">Following</button>
+                                                        <button class="btnfollowing"
+                                                            id="followButton">Following</button>
                                                     </div>
                                                     <div class="chatBotton">
                                                         <button type="button" class="btn btn-outline-dark">Chat</button>
@@ -182,7 +183,8 @@
                                                 </div>
                                                 <div class="listButton">
                                                     <div class="followButton">
-                                                        <button class="btnfollowing" id="followButton">Following</button>
+                                                        <button class="btnfollowing"
+                                                            id="followButton">Following</button>
                                                     </div>
                                                     <div class="chatBotton">
                                                         <button type="button" class="btn btn-outline-dark">Chat</button>
@@ -231,10 +233,12 @@
         var countF = 0;
         var countButton = document.getElementById("followButton");
         var displayCount = document.getElementById("followers");
+
         countButton.onclick = function () {
             if (countButton.innerText == "Following") {
                 countF++;
                 countButton.innerText = "Follow";
+                countButton
             } else if (countButton.innerText == "Follow") {
                 countF--;
                 countButton.innerText = "Following";
@@ -243,6 +247,7 @@
         }
 
     </script>
+
 
 </body>
 

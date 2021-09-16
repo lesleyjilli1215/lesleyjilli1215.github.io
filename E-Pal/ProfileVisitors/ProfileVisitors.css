@@ -395,13 +395,13 @@ a:hover {
     border-radius: 400px !important;
 }
 
-.btn-outline-secondary:hover {
+.btnfollowing:hover {
     color: white !important;
     background-color: #4f4e60 !important;
     border-color: #4f4e60 !important;
 }
 
-.btn-outline-secondary:active {
+.btnfollowing:active {
     
     color: white !important;
     background-color: #4f4e60 !important;
