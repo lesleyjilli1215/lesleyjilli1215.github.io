@@ -121,7 +121,6 @@ a:hover {
 
 .list-group-item {
     display: flex !important;
-    flex-direction: column !important;
     align-items: center !important;
     justify-content: space-between !important;
     padding: 12px 0 !important;
@@ -368,6 +367,7 @@ a:hover {
 /* button */
 .listButton{
     display: flex;
+    flex-direction: column;
 }
 
 .followButton{
@@ -497,6 +497,11 @@ a:hover {
         flex-direction: row !important;
     }
 
+    .listButton{
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
 @media screen and (min-width:996px) {
@@ -533,6 +538,11 @@ a:hover {
         flex-direction: row !important;
     }
 
+    .listButton{
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
 @media screen and (min-width:1200px) {
@@ -567,6 +577,11 @@ a:hover {
 
     .list-group-item {
         flex-direction: row !important;
+    }
+
+    .listButton{
+        display: flex;
+        flex-direction: row;
     }
 
 }
