@@ -95,7 +95,7 @@ a:hover {
     background-color: transparent !important;
 }
 
-.nav nav-tabs{
+.nav{
     display: flex;
     padding-left: 0;
     margin-bottom: 0;
