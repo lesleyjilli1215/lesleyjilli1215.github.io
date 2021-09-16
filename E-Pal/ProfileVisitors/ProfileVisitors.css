@@ -381,7 +381,7 @@ a:hover {
     outline: 0 !important;
     margin-top: 5% !important;
     margin-bottom: 5% !important;
-    width: 120px !important;
+    width: 80px !important;
     padding: 9px !important;
     text-align: center !important;
     text-decoration: none !important;
@@ -438,7 +438,7 @@ a:hover {
     outline: 0 !important;
     margin-top: 5% !important;
     margin-bottom: 5% !important;
-    width: 120px !important;
+    width: 80px !important;
     padding: 9px !important;
     text-align: center !important;
     text-decoration: none !important;
@@ -503,10 +503,12 @@ a:hover {
 
     .btnfollowing{
         font-size: 14px !important;
+        width: 120px !important;
     }
 
     .btn-outline-dark{
         font-size: 14px !important;
+        width: 120px !important;
     }
 
     .followButton{
@@ -556,10 +558,12 @@ a:hover {
 
     .btnfollowing{
         font-size: 14px !important;
+        width: 120px !important;
     }
 
     .btn-outline-dark{
         font-size: 14px !important;
+        width: 120px !important;
     }
 
     .followButton{
@@ -609,10 +613,12 @@ a:hover {
 
     .btnfollowing{
         font-size: 14px !important;
+        width: 120px !important;
     }
 
     .btn-outline-dark{
         font-size: 14px !important;
+        width: 120px !important;
     }
 
     .followButton{
