@@ -183,14 +183,15 @@
                                                 </div>
                                                 <div class="listButton">
                                                     <div class="followButton">
-                                                        <button class="btnfollowing" id="followButton"  onclick="changetext(this)">Following</button>
+                                                        <button class="btnfollowing" id="followButton"
+                                                            onclick="changetext(this)">Following</button>
                                                     </div>
                                                     <div class="chatBotton">
                                                         <button type="button" class="btn btn-outline-dark">Chat</button>
                                                     </div>
                                                 </div>
                                             </li>
-                                            
+
                                         </ul>
                                     </div>
                                 </div>
@@ -229,22 +230,39 @@
 
     <script>
 
-        function changetext(countBtn) {
+        // function changetext(countBtn) {
 
-            var countF = 0;
-            var countButton = document.getElementById("followButton");
-            var displayCount = document.getElementById("followers");
+        //     // var countF = 0;
+        //     var countButton = document.getElementById("followButton");
+        //     // var displayCount = document.getElementById("followers");
 
-            countButton.onclick = function () {
-                if (countButton.innerText == "Following") {
-                    countF++;
-                    countButton.innerText = "Follow";
-                    countButton
-                } else if (countButton.innerText == "Follow") {
-                    countF--;
-                    countButton.innerText = "Following";
-                }
-                followers.innerHTML = countF;
+        //     countButton.onclick = function () {
+        //         if (countButton.innerText == "Following") {
+        //             // countF++;
+        //             countButton.innerText = "Follow";
+
+        //         } else if (countButton.innerText == "Follow") {
+        //             // countF--;
+        //             countButton.innerText = "Following";
+        //         }
+        //         // followers.innerHTML = countF;
+        //     }
+
+        // }
+
+        function changetext(btnfo) {
+
+            let countButton = document.getElementsByClassName("btnfollowing");
+
+            for (let cb of countButton) {
+
+            if (countButton.innerText == "Following") {
+
+                countButton.innerText = "Follow";
+
+            } else if (countButton.innerText == "Follow") {
+
+                countButton.innerText = "Following";
             }
 
         }
