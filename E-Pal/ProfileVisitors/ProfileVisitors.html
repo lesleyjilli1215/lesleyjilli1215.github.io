@@ -249,49 +249,18 @@
         //     }
         // }
 
-
         // test-2
-        function changetext(btncb) {
-
-            let countButton = document.getElementsByClassName("btnfollowing");
-            console.log(countButton[0]);
-
-            countButton.forEach((element, idx) => {
-                element.addeventlistener(index, function () {
-                    if (element.innerText == "Following") {
-                        element.innerText = "Follow";
-                    } else if (element.innerText == "Follow") {
-                        element.innerText = "Following";
-                    }
-                })
-            });
-            // for (let cb of countButton) {
-            //     if (cb.innerText == "Following") {
-            //         cb.innerText = "Follow";
-            //     } else if (cb.innerText == "Follow") {
-            //         cb.innerText = "Following";
-            //     }
-            // }
-        }
-
-
-        // test - 3
-        // function changetext(btnfo) {
-        //     let countButton = document.querySelectorAll(".btnfollowing");
-        //     if (countButton[0].innerText == "Following") {
-        //         cb.innerText = "Follow";
-        //     }
-        //     else if (cb.innerText == "Follow") {
-        //         cb.innerText = "Following";
-        //     }
-        //     for (let cb of countButton) {
-        //         if (cb.innerText == "Following") {
-        //             cb.innerText = "Follow";
-        //         } else if (cb.innerText == "Follow") {
-        //             cb.innerText = "Following";
-        //         }
-        //     }
-        // }
+        let countButton = document.querySelectorAll(".btnfollowing");
+        countButton.forEach((ele, idx) => {
+            ele.addEventListener('click',function () {
+                if (ele.innerText == "Following") {
+                    ele.innerText = "Follow";
+                }
+                else if (ele.innerText == "Follow") {
+                    ele.innerText = "Following";
+                }
+            })
+        })
 
     </script>
 
