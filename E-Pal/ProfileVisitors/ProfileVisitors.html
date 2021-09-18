@@ -255,13 +255,23 @@
 
             let countButton = document.getElementsByClassName("btnfollowing");
             console.log(countButton[0]);
-            for (let cb of countButton) {
-                if (cb.innerText == "Following") {
-                    cb.innerText = "Follow";
-                } else if (cb.innerText == "Follow") {
-                    cb.innerText = "Following";
-                }
-            }
+
+            countButton.forEach((element, idx) => {
+                element.addeventlistener(index, function () {
+                    if (element.innerText == "Following") {
+                        element.innerText = "Follow";
+                    } else if (element.innerText == "Follow") {
+                        element.innerText = "Following";
+                    }
+                })
+            });
+            // for (let cb of countButton) {
+            //     if (cb.innerText == "Following") {
+            //         cb.innerText = "Follow";
+            //     } else if (cb.innerText == "Follow") {
+            //         cb.innerText = "Following";
+            //     }
+            // }
         }
 
 
