@@ -407,26 +407,6 @@ a:hover {
     border-color: #4f4e60 !important;
 }
 
-.btnFollow{
-    position: relative !important;
-    border: 0 !important;
-    outline: 0 !important;
-    margin-top: 5% !important;
-    margin-bottom: 5% !important;
-    width: 120px !important;
-    padding: 9px !important;
-    text-align: center !important;
-    text-decoration: none !important;
-    font-size: 12px !important;
-    font-weight: 500 !important;
-    box-sizing: border-box !important;
-    border: 1px solid #7041e6 !important;
-    color: white !important;
-    background: #7041e6 !important;
-    background-size: 100% !important;
-    border-radius: 400px !important;
-}
-
 .chatButton{
     display: inline-block;
     margin: 0 23px 0px 0;
