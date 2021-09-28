@@ -226,7 +226,7 @@
 }
 
 .apptTimepicker::-webkit-calendar-picker-indicator {
-    color: yellow !important;
+    /* background-color: yellow !important; */
 }
 
 
