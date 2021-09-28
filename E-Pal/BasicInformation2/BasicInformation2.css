@@ -196,7 +196,7 @@
     }
 
 .apptTime {
-    margin-left: 100px;
+    margin-left: 220px;
     font-size: 14px;
     display: inline-block;
     margin-top: 6px;
@@ -216,14 +216,19 @@
 
 .apptTimepicker{
     color: white;
-    /* background-color: #302F3D !important; */
+    background-color: #302F3D !important;
     border: 0.5px solid #302F3D !important;
     margin-bottom: 1.5rem !important;
     border-radius: 5px;
     position: relative;
-    width: 120px;
+    /* width: 120px; */
     text-align: center;
 }
+
+.apptTimepicker::-webkit-calendar-picker-indicator {
+    color: yellow !important;
+}
+
 
 .timePickerWrapper .timePickerIcon {
     margin-left: 12px;
