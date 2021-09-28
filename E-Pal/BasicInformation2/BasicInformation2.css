@@ -223,6 +223,7 @@
     position: relative;
     /* width: 120px; */
     text-align: center;
+    
 }
 
 .apptTimepicker::-webkit-calendar-picker-indicator {
