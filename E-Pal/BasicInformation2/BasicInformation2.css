@@ -186,6 +186,7 @@
     position: relative;
     height: 35px;
     display: flex;
+    justify-content: space-between;
 }
 
     .timePickerWrapper label {
@@ -226,10 +227,9 @@
     
 }
 
-.apptTimepicker::-webkit-calendar-picker-indicator {
-    /* background-color: yellow !important; */
-}
-
+/* .apptTimepicker::-webkit-calendar-picker-indicator {
+    background-color: yellow !important;
+} */
 
 .timePickerWrapper .timePickerIcon {
     margin-left: 12px;
