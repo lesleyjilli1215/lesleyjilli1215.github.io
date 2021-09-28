@@ -1,28 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: white;
-    }
+}
 
 /* epalPage2 */
-.epalPage2{
+.epalPage2 {
     height: 100%;
     overflow: auto;
     position: relative;
 }
 
-.page2Wrapper{
+.page2Wrapper {
     width: 100%;
     background-position: 50%;
     background-size: cover;
 }
 
-.content{
-    padding: 100px 20px;
+.content {
+    padding: 50px 20px;
 }
 
-.title{
+.title {
     margin-bottom: 24px;
     line-height: 1;
     font-size: 24px;
@@ -30,19 +30,19 @@
 }
 
 /* page2Loading */
-.page2Loading{
+.page2Loading {
     position: relative;
 }
 
-.page2Container{
+.page2Container {
     transition: opacity .3s;
 }
 
-.addForm{
+.addForm {
     width: 100%;
 }
 
-.desc{
+.desc {
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 14px;
@@ -52,17 +52,17 @@
 
 /* form */
 /* 1 - State */
-.formWrapper{
+.formWrapper {
     width: 100%;
 }
 
-.formMain p{
+.formMain p {
     font-size: 12px;
     color: #c4c3e6;
     margin-bottom: 0.2rem !important;
 }
 
-.form-select{
+.form-select {
     font-size: 14px !important;
     color: white !important;
     background-color: #302F3D !important;
@@ -71,15 +71,15 @@
 }
 
 /* 2 - Price */
-.col-12-1{
+.col-12-1 {
     flex: 58% !important;
 }
 
-.col-12-2{
+.col-12-2 {
     flex: 30% !important;
 }
 
-.input-group .form-control{
+.input-group .form-control {
     font-size: 14px !important;
     color: white !important;
     background-color: #302F3D !important;
@@ -87,86 +87,84 @@
     margin-bottom: 1.5rem !important;
 }
 
-.input-group-text{
+.input-group-text {
     background-color: #302F3D !important;
     border: 0.5px solid #ced4da !important;
     margin-bottom: 1.5rem !important;
 }
 
-.input-group-text img{
-    width: 20px;
-    height: 20px;
-}
+    .input-group-text img {
+        width: 20px;
+        height: 20px;
+    }
 
-.servicePriceQue{
+.servicePriceQue {
     /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    position: absolute;
-    top: 10px;
-    right: -35px; */
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+         position: absolute;
+         top: 10px;
+         right: -35px; */
     flex: 1;
     display: contents;
 }
 
-.servicePriceQue .icon{
-    width: 24px;
-    height: 24px;
-    font-size: 12px;
-    background: #302F3D;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin-bottom: 10px;
-}
+    .servicePriceQue .icon {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        background: #302F3D;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-bottom: 10px;
+    }
 
-.icon{
+.icon {
     position: inherit;
     display: inline-block;
     border-bottom: 1px dotted black;
 }
 
-.icon .tooltiptext{
-    visibility: hidden;
-    width: 250px;
-    background-color: black;
-    color: #fff;
-    text-align: start;
-    padding: 5px 5px;
-    border-radius: 6px;
-  
-    /* Position the tooltip text */
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-  
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 0.3s;
-}
+    .icon .tooltiptext {
+        visibility: hidden;
+        width: 250px;
+        background-color: black;
+        color: #fff;
+        text-align: start;
+        padding: 5px 5px;
+        border-radius: 6px;
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        /* Fade in tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
 
-.icon .tooltiptext::after{
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
+        .icon .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
 
-.icon:hover .tooltiptext{
-    visibility: visible;
-    opacity: 1;
-}
+    .icon:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
 
-.btn btn-secondary{
+.btn btn-secondary {
     width: 24px;
     height: 24px;
     font-size: 14px;
@@ -180,7 +178,7 @@
 }
 
 /* 3 - Timepicker */
-.timePickerWrapper{
+.timePickerWrapper {
     background-color: #302F3D !important;
     border: 0.5px solid #ced4da !important;
     margin-bottom: 1.5rem !important;
@@ -189,26 +187,26 @@
     height: 35px;
 }
 
-.timePickerWrapper label{
-    margin-left: 15px;
-    font-size: 14px;
-    display: inline-block;
-    margin-top: 6px;
-}
+    .timePickerWrapper label {
+        margin-left: 15px;
+        font-size: 14px;
+        display: inline-block;
+        margin-top: 6px;
+    }
 
-.appt-time{
+.appt-time {
     margin-left: 100px;
     font-size: 14px;
     display: inline-block;
     margin-top: 6px;
 }
 
-.timePickerWrapper .timePickerIcon{
+.timePickerWrapper .timePickerIcon {
     margin-left: 12px;
     transition: all .3s linear;
 }
 
-.iconFont{
+.iconFont {
     font-family: "iconfont" !important;
     font-size: 16px;
     font-style: normal;
@@ -216,11 +214,11 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.iconMenuope ::before{
+.iconMenuope ::before {
     content: "\e615";
 }
 
-.formLine{
+.formLine {
     margin-bottom: 24px;
     border-top: 1px solid #4F4E60;
     width: 100%;
@@ -229,16 +227,16 @@
 
 /* footer */
 
-.buttonWrapper{
+.buttonWrapper {
     display: flex;
 }
 
-.preButtonWrapper{
+.preButtonWrapper {
     display: inline-block;
     margin: 0 23px 24px 0;
 }
 
-.btn-outline-secondary{
+.btn-outline-secondary {
     color: white !important;
     position: relative !important;
     border: 0 !important;
@@ -257,18 +255,18 @@
     border-radius: 400px !important;
 }
 
-.btn-outline-secondary:hover {
-    color: white !important;
-    background-color: #4f4e60 !important;
-    border-color: #2f244d !important;
-}
+    .btn-outline-secondary:hover {
+        color: white !important;
+        background-color: #4f4e60 !important;
+        border-color: #2f244d !important;
+    }
 
-.nextButtonWrapper{
+.nextButtonWrapper {
     display: inline-block;
     margin: 0 23px 24px 0;
 }
 
-.btn-outline-dark{
+.btn-outline-dark {
     position: relative !important;
     border: 0 !important;
     outline: 0 !important;
@@ -288,48 +286,44 @@
     border-radius: 400px !important;
 }
 
-.btn-outline-dark:hover {
-    color: white !important;
-    background-color: #7041e6 !important;
-    border-color: #2f244d !important;
-}
+    .btn-outline-dark:hover {
+        color: white !important;
+        background-color: #7041e6 !important;
+        border-color: #2f244d !important;
+    }
 
 @media screen and (max-width:767px) {
-
 }
 
 @media screen and (min-width:768px) {
 
-    .epalPage2{
+    .epalPage2 {
         width: 650px;
     }
 
-    .icon{
+    .icon {
         position: relative;
     }
-
 }
 
 @media screen and (min-width:996px) {
 
-    .epalPage2{
+    .epalPage2 {
         width: 650px;
     }
 
-    .icon{
+    .icon {
         position: relative;
     }
-
 }
 
 @media screen and (min-width:1200px) {
 
-    .epalPage2{
+    .epalPage2 {
         width: 650px;
     }
 
-    .icon{
+    .icon {
         position: relative;
     }
-
 }
